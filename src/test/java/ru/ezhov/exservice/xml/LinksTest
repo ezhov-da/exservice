@@ -1,0 +1,42 @@
+package ru.ezhov.exservice.xml;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.JAXB;
+import org.junit.Test;
+
+/**
+ *
+ * @author ezhov_da
+ */
+public class LinksTest
+{
+
+    public LinksTest()
+    {
+    }
+
+    @Test
+    public void testSomeMethod()
+    {
+        Element element = new Element("separator", "text");
+        Element element1 = new Element("columnCount", "text");
+        Element element2 = new Element("text", "textArea");
+
+        List<Element> elements = new ArrayList<>();
+        elements.add(element);
+        elements.add(element1);
+        elements.add(element2);
+
+        Link link = new Link("test", "sdvabs", "sgedsgash", elements);
+
+        List<Link> links = new ArrayList<>();
+        links.add(link);
+
+        Links l = new Links(links);
+
+        JAXB.marshal(l, System.out);
+
+    }
+
+}
