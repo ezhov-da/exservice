@@ -9,13 +9,11 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- *
  * @author ezhov_da
  */
 @XmlRootElement(name = "link")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Link
-{
+public class Link {
 
     private static final Logger LOG =
             Logger.getLogger(Link.class.getName());
@@ -28,59 +26,49 @@ public class Link
     @XmlElement(name = "element")
     private List<Element> elements;
 
-    public Link()
-    {
+    public Link() {
     }
 
     public Link(
             String name,
             String url,
             String description,
-            List<Element> elements)
-    {
+            List<Element> elements) {
         this.name = name;
         this.url = url;
         this.description = description;
         this.elements = elements;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getUrl()
-    {
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url)
-    {
+    public void setUrl(String url) {
         this.url = url;
     }
 
-    public String getDescription()
-    {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description)
-    {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public List<Element> getElements()
-    {
+    public List<Element> getElements() {
         return elements;
     }
 
-    public void setElements(List<Element> elements)
-    {
+    public void setElements(List<Element> elements) {
         this.elements = elements;
     }
 

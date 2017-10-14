@@ -8,7 +8,7 @@ import java.util.List;
 public class LinksHolder implements Holder<List<Link>> {
 
     private final String TEST_LINK =
-            "https://raw.githubusercontent.com/ezhov-da/groovy/master/scripts/src/main/groovy/ru/ezhov/parser_text_to_column.groovy";
+            "https://raw.githubusercontent.com/ezhov-da/groovy_scripts/master/src/main/groovy/ru/ezhov/parser_text_to_column.groovy";
 
     public List<Link> get() {
 
