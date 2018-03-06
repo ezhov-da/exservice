@@ -4,12 +4,10 @@ import com.jcabi.log.Logger;
 import org.takes.Request;
 import org.takes.Response;
 import org.takes.Take;
-import org.takes.rq.form.RqFormBase;
 import org.takes.rq.form.RqFormSmart;
 import org.takes.rs.RsText;
 import ru.ezhov.exservice.beans.Link;
 import ru.ezhov.exservice.script.Holder;
-import ru.ezhov.exservice.script.ScriptHolder;
 import ru.ezhov.exservice.script.WebHolder;
 
 import java.io.IOException;
@@ -27,7 +25,7 @@ public class TkGroovy implements Take {
     public Response act(Request request) throws IOException {
 
 
-       // final String textFrom = new RqFormSmart(request).single("textFrom");
+        // final String textFrom = new RqFormSmart(request).single("textFrom");
         final String textId = new RqFormSmart(request).single("id");
 
         Logger.info(this, "input id: %s", textId);
@@ -37,7 +35,7 @@ public class TkGroovy implements Take {
         Response response;
 
         //start Velocity foreach with 1
-        if (id < 1 && id > listHolder.get().size() ) {
+        if (id < 1 && id > listHolder.get().size()) {
             response = new RsText("error id");
         } else {
 

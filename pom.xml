@@ -66,7 +66,9 @@
         <dependency>
             <groupId>org.takes</groupId>
             <artifactId>takes</artifactId>
-            <version>1.4</version>
+            <version>1.8.6</version>
+            <!--ERROR java.io.IOException - very strange error: empty request-->
+            <!--<version>1.4</version>-->
         </dependency>
 
     </dependencies>

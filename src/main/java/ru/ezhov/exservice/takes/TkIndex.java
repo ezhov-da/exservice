@@ -8,7 +8,6 @@ import ru.ezhov.exservice.beans.Link;
 import ru.ezhov.exservice.script.Holder;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class TkIndex implements Take {

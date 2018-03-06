@@ -9,7 +9,7 @@ public class WebHolderTest {
     @Test
     public void test() {
         String urlToScript =
-                "https://raw.githubusercontent.com/ezhov-da/groovy/master/scripts/src/main/groovy/ru/ezhov/parser_text_to_column.groovy";
+                "https://raw.githubusercontent.com/ezhov-da/groovy-scripts/master/src/main/groovy/ru/ezhov/parserTextToColumn.groovy";
         Holder<String> stringHolder = new WebHolder(urlToScript);
         String result = stringHolder.get();
 

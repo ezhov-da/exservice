@@ -1,19 +1,17 @@
 package ru.ezhov.exservice.xml;
 
-import java.util.logging.Logger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.logging.Logger;
 
 /**
- *
  * @author ezhov_da
  */
 @XmlRootElement(name = "element")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Element
-{
+public class Element {
     private static final Logger LOG =
             Logger.getLogger(Element.class.getName());
 
@@ -22,33 +20,27 @@ public class Element
     @XmlAttribute()
     private String type;
 
-    public Element()
-    {
+    public Element() {
     }
 
-    public Element(String name, String type)
-    {
+    public Element(String name, String type) {
         this.name = name;
         this.type = type;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getType()
-    {
+    public String getType() {
         return type;
     }
 
-    public void setType(String type)
-    {
+    public void setType(String type) {
         this.type = type;
     }
 
